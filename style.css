@@ -1,0 +1,49 @@
+:root {
+  --bg: #97999c;
+  --fg: #cdcfd3;
+  --dark: #16171a;
+  --light: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #4c4e51;
+    --fg: #8a8c8f;
+    --dark: #000;
+    --light: #cdcfd3;
+  }
+}
+
+body {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: var(--bg);
+  color: var(--dark);
+  user-select: none;
+  font: bold 72px Tahoma;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  background: var(--fg);
+  padding: 18px;
+  border-radius: 18px;
+  text-align: center;
+  min-width: 144px;
+}
+
+button {
+  font: inherit;
+  font-size: 36px;
+  outline: none;
+  border: none;
+  width: 108px;
+  height: 72px;
+  border-radius: 36px;
+  margin-top: 36px;
+  background: #0021a5;
+  color: var(--light);
+  cursor: pointer;
+}
