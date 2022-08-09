@@ -1,5 +1,3 @@
-'use strict';
-
 function qs(selector, parent = document) {
   return parent.querySelector(selector);
 }
@@ -22,3 +20,5 @@ function aelo(x, type, fn) {
   const element = typeof x === 'object' ? x : qs(x);
   element.addEventListener(type, f, {once: true});
 }
+
+export {qs, qsa, ael, aelo};
