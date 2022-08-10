@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="utf-8">
+<title>Firebase Test: Authorization</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="utility.js"></script>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+<section class="app">
+  <div>Welcome, <span></span>!</div>
+  <div><button type="button">Log Out</button></div>
+</section>
+<section class="login">
+  <form>
+    <div class="item">
+      <label>Email</label>
+      <input type="email">
+    </div>
+    <div class="item">
+      <label>Password</label>
+      <input type="password">
+    </div>
+    <div class="item error-message">
+      Failed to log in.<br>
+      Check email and password.
+    </div>
+    <div class="item">
+      <button type="button">Log In</button>
+      <button type="button">Sign Up</button>
+    </div>
+  </form>
+</section>
+<section class="signup">
+  <form>
+    <div>
+      <label>Email</label>
+      <input type="email">
+    </div>
+    <div>
+      <label>Password</label>
+      <input type="password">
+    </div>
+    <div>
+      <label>Password (type again to confirm)</label>
+      <input type="password">
+    </div>
+    <div>
+      <button type="button">Sign Up</button>
+    </div>
+  </form>
+</section>
